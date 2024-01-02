@@ -1,0 +1,120 @@
+.featureTitle {
+  color: var(--black);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.featureImage {
+  width: 100vw;
+  max-width: none;
+  user-select: none;
+}
+.featureDescriptionList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.featureDescriptionItem {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.featureDescriptionTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.featureDescriptionText {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--grey-dark);
+  margin-top: 12px;
+}
+
+.subTitle {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .featureImage {
+    width: initial;
+    max-width: 596px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .featureDescriptionList {
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .featureDescriptionItem {
+    padding: 0;
+    width: 330px;
+  }
+
+  .featureDescriptionTitle {
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .featureCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .featureTitle {
+    text-align: start;
+    margin-bottom: 32px;
+  }
+
+  .featureImage {
+    width: 100%;
+    max-width: 710px;
+    margin-left: -137px;
+    margin-right: 0;
+  }
+
+  .featureDescriptionList {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: nowrap;
+    gap: 26px;
+  }
+
+  .featureDescriptionItem {
+    width: 100%;
+  }
+
+  .featureDescriptionTitle {
+    gap: 8px;
+  }
+}

@@ -1,0 +1,244 @@
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 64px;
+  max-width: 396px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 360px;
+
+  text-align: center;
+  color: var(--grey-dark);
+  margin-top: 16px;
+}
+
+.downloadBtn {
+  margin-top: 35px;
+  width: 250px;
+  height: 60px;
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  background-color: var(--blue);
+  border-radius: 10px;
+  border: none;
+}
+
+.hero {
+  margin-top: 76px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroImage {
+  width: 100vw;
+  max-width: none;
+  margin-top: 43px;
+  user-select: none;
+}
+
+.features {
+  margin-top: 50px;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.subTitle {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.stepsList {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.timeline {
+  margin-top: 90px;
+}
+
+.stepsTitle {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 60px;
+}
+
+.questionsTitle {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 60px;
+}
+
+.questionsList {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timelineDescription {
+  color: var(--grey-dark);
+  max-width: 641px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    max-width: none;
+    margin-top: 30px;
+  }
+
+  .hero {
+    margin-top: 66px;
+  }
+
+  .heroImage {
+    width: initial;
+    max-width: 596px;
+    margin-top: 23px;
+  }
+
+  .stepsTitle {
+    margin-bottom: 70px;
+  }
+
+  .questionsTitle {
+    margin-bottom: 70px;
+  }
+
+  .stepsList {
+    display: flex;
+    max-width: 621px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .questionsList {
+    flex-wrap: wrap;
+    height: 1000px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    min-width: 580px;
+    text-align: left;
+  }
+
+  .description {
+    max-width: 562px;
+    text-align: left;
+    margin-top: 26px;
+  }
+
+  .downloadBtn {
+    margin-top: 26px;
+  }
+
+  .hero {
+    margin-top: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .heroContent {
+    margin-top: 105px;
+    align-items: flex-start;
+  }
+
+  .heroImage {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    margin-top: -25px;
+  }
+  .features {
+    margin-top: 0;
+  }
+
+  .featureList {
+    gap: 0;
+  }
+
+  .timeline {
+    margin-top: 60px;
+  }
+
+  .stepsTitle {
+    margin-bottom: 28px;
+  }
+
+  .questionsTitle {
+    margin-bottom: 15px;
+  }
+
+  .questionsDescription {
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .stepsList {
+    max-width: none;
+    flex-wrap: nowrap;
+    gap: 67px;
+    margin-bottom: 40px;
+  }
+
+  .questionsList {
+    height: 667px;
+  }
+}
