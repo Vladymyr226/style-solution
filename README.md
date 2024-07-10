@@ -1,1 +1,1 @@
-# hidegram-land-2
+# style-solution
