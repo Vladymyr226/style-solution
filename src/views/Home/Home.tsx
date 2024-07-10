@@ -1,7 +1,6 @@
 import s from './Home.module.css'
 import HeroImage from '../../assets/images/desktop-phone-1.png'
-
-import { FEATURES, QUESTIONS, STEPS } from '../../constants'
+import { FEATURES, QUESTIONS } from '../../constants'
 import FeatureCard from '../../components/FeatureCard/FeatureCard'
 import QuestionCard from '../../components/QuestionCard/QuestionCard'
 import { useMediaQuery } from 'react-responsive'
@@ -13,10 +12,10 @@ export default function Home() {
     <div className={s.home}>
       <section id='home' className={s.hero}>
         <div className={s.heroContent}>
-          <h1 className={s.title}>
+          <p className={s.title}>
             Ми допомагаємо перукарням, барбершопам та салонам краси побудувати успішний бізнес
             онлайн
-          </h1>
+          </p>
 
           <p className={s.description}>
             Наша команда експертів готова надати повний соціальний медіа-маркетинг, розробку бренду

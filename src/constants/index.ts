@@ -2,10 +2,6 @@ import { Feature, Question, Step } from '../types'
 import Phone1 from '../assets/images/desktop-phone-1.png'
 import Phone2 from '../assets/images/desktop-phone-2.png'
 import Phone3 from '../assets/images/desktop-phone-3.png'
-import Step1 from '../assets/images/first-step.png'
-import Step2 from '../assets/images/second-step.png'
-import Step3 from '../assets/images/third-step.png'
-import Step4 from '../assets/images/forth-step.png'
 
 export const FEATURES: Feature[] = [
   {
@@ -80,37 +76,6 @@ export const FEATURES: Feature[] = [
       },
     ],
     image: Phone3,
-  },
-]
-
-export const STEPS: Step[] = [
-  {
-    step: 'Q1',
-    year: '2023',
-    title: 'Proof of Concept',
-    text: "Launching the Foundation - Hidegram's Proof of Concept Emerges, Showcasing the Revolutionary Potential of Privacy-Focused Communication Without Compromising on User-Friendliness.",
-    image: Step1,
-  },
-  {
-    step: 'Q1',
-    year: '2024',
-    title: 'User-Friendly Prototype',
-    text: 'Usability Meets Security - Hidegram Introduces the First User-Friendly Prototype, Blending Robust Encryption with an Intuitive Interface for Effortless Adoption.',
-    image: Step2,
-  },
-  {
-    step: 'Q2',
-    year: '2024',
-    title: 'File Sharing Features',
-    text: 'Expanding Functionality - Hidegram Evolves with the Integration of File-Sharing Capabilities, Ensuring Secure and Private Document Transfers Within the Chat Environment.',
-    image: Step3,
-  },
-  {
-    step: 'Q3-Q4',
-    year: '2024',
-    title: 'Launch of Access',
-    text: 'Complete Control - The Latter Half of 2024 Will See the Launch of Access, Hidegram’s Key Management System, Providing Users with Unprecedented Control Over Their Encryption Keys Across Devices.',
-    image: Step4,
   },
 ]
 
