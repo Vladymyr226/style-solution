@@ -90,30 +90,3 @@ export const FEATURES: Feature[] = [
     image: Phone3,
   },
 ]
-
-export const QUESTIONS: Question[] = [
-  {
-    title: 'How Does Hidegram Ensure My Conversations Are Private?',
-    text: 'Hidegram Ensures Privacy by Encrypting Messages Client-Side and Not Storing Any Personal Data—Ensuring Only You Can Access Your Conversations.',
-  },
-  {
-    title: 'How Can I Get Started With Using Hidegram?',
-    text: 'Begin with Hidegram by Sending a Secure Code via Your Current Messenger Using Change, Then Start Your Encrypted Chat Instantly on Our Platform.',
-  },
-  {
-    title: 'Is Hidegram Free To Use, Or Are There Any Fees?',
-    text: "Hidegram Will Remain Free Until We Ensure Our Platform's Usability Aligns with the Highest Market Standards, Providing an Unmatched User Experience.",
-  },
-  {
-    title: 'What Makes Hidegram Different From Other Messaging Apps?',
-    text: 'Hidegram Stands Out by Eliminating the Need for User Accounts, Offering Unparalleled Privacy Through a Unique Encryption Key System Controlled Solely by You.',
-  },
-  {
-    title: 'How Can I Trust That My Messages Are Truly Secure?',
-    text: "Hidegram's Open Database Enhances Transparency, While User-Generated Strong Encryption Keys Ensure Message Privacy.",
-  },
-  {
-    title: 'What Happens If I Lose My Encryption Key?',
-    text: "If You Lose Your Encryption Key, the Messages Cannot Be Recovered for Security Reasons; It's Crucial to Back Up Your Key Safely.",
-  },
-]
