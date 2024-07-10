@@ -39,19 +39,23 @@ const Header = () => {
         {!isMobile && (
           <ul className={s.navigationList}>
             <li className={s.navigationItem}>
+              <Link to='/#Стильна зачіска за вашим фото з використанням AI'>
+                Стильна зачіска за вашим фото з використанням AI
+              </Link>
+            </li>
+
+            <li className={s.navigationItem}>
               <Link to='/#Бронь запису онлайн'>Бронь запису онлайн</Link>
             </li>
             <li className={s.navigationItem}>
               <Link to='/#Зворотний дзвінок'>Зворотний дзвінок</Link>
             </li>
             <li className={s.navigationItem}>
-              <Link to='/#Інформація про послуги'>Інформація про послуги</Link>
+              <Link to='/#Інформація про послуги закладу'>Інформація про послуги закладу</Link>
             </li>
+
             <li className={s.navigationItem}>
-              <Link to='/#timeline'>Генерація власного стилю за допомогою AI</Link>
-            </li>
-            <li className={s.navigationItem}>
-              <Link to='/#FAQ'>FAQ</Link>
+              <Link to='/#Нагадування про попередній запис'>Нагадування про попередній запис</Link>
             </li>
           </ul>
         )}
