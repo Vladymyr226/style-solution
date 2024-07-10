@@ -63,7 +63,6 @@ const Header = () => {
             </li>
           </ul>
         )}
-        <p className={s.download}>Спробуй!</p>
       </nav>
     </div>
   )
