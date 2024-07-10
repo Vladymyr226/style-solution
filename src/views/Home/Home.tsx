@@ -30,7 +30,6 @@ export default function Home() {
       </section>
 
       <section className={s.features}>
-        {!isDesktop && <h2 className={s.subTitle}>ОСОБЛИВОСТІ</h2>}
         <ul className={s.featureList}>
           {FEATURES.map((feature, idx) => (
             <FeatureCard key={idx} feature={feature} />
