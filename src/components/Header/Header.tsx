@@ -57,6 +57,10 @@ const Header = () => {
             <li className={s.navigationItem}>
               <Link to='/#Нагадування про попередній запис'>Нагадування про попередній запис</Link>
             </li>
+
+            <li className={s.navigationItem}>
+              <Link to='/#Аналітика відвідування закладу'>Аналітика відвідування закладу</Link>
+            </li>
           </ul>
         )}
         <p className={s.download}>Спробуй!</p>
