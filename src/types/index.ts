@@ -16,3 +16,10 @@ export type Step = {
   text: string
   image: string
 }
+
+export type TCards = {
+  title: string
+  price: string
+  description: string
+  features: Array<string>
+}

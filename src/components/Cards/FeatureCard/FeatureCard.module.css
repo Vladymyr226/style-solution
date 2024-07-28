@@ -1,9 +1,9 @@
 .featureTitle {
   color: var(--black);
   text-align: center;
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 48px;
+  line-height: 28px;
 }
 
 .featureImage {
@@ -11,6 +11,7 @@
   max-width: none;
   user-select: none;
 }
+
 .featureDescriptionList {
   display: flex;
   flex-direction: column;
@@ -51,6 +52,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .featureTitle {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
   .featureImage {
     width: initial;
     max-width: 596px;
@@ -90,6 +96,8 @@
   .featureTitle {
     text-align: start;
     margin-bottom: 32px;
+    font-size: 48px;
+    line-height: 48px;
   }
 
   .featureImage {

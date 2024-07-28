@@ -24,21 +24,15 @@
 
 .navigation {
   padding-top: 20px;
+  gap: 20px;
+  justify-content: space-between;
   /* padding-bottom: 20px; */
   display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 
-.email {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.2px;
+.navigation img {
+  min-width: 60px;
 }
 
 .download {
@@ -53,6 +47,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  overflow-x: auto;
+  width: 830px;
 }
 
 .navigationItem {
@@ -61,6 +57,8 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.2px;
+  text-align: center;
+  min-width: 145px;
 }
 
 .middleLabel {
@@ -92,7 +90,13 @@
     max-width: 1240px;
   }
 
+  .navigation {
+    gap: 0;
+    justify-content: normal;
+  }
+
   .navigationList {
     gap: 32px;
+    width: auto;
   }
 }

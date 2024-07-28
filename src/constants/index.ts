@@ -1,4 +1,4 @@
-import { Feature, Question, Step } from '../types'
+import {Feature, TCards} from '../types'
 import Phone1 from '../assets/images/desktop-phone-1.png'
 import Phone2 from '../assets/images/desktop-phone-2.png'
 import Phone3 from '../assets/images/desktop-phone-3.png'
@@ -90,3 +90,12 @@ export const FEATURES: Feature[] = [
     image: Phone3,
   },
 ]
+
+export const CARDS: Array<TCards> = [
+  {
+    title: 'Базовый',
+    price: '1000 грн',
+    description: 'Основные услуги',
+    features: ['Стильна зачіска за вашим фото з використанням AI', 'Бронь запису онлайн', 'Зворотний дзвінок', 'Інформація про послуги закладу', 'Нагадування про попередній запис', 'Аналітика відвідування закладу'],
+  },
+];
