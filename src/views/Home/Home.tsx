@@ -1,11 +1,15 @@
 import s from './Home.module.css'
-import HeroImage from '../../assets/images/desktop-phone-1.png'
+import HeroImageDesktop from '../../assets/images/Desktop/desktop-phone-1.png'
+import HeroImageMobile from '../../assets/images/Mobile/phone1.png'
 import {CARDS, FEATURES} from '../../constants'
 import FeatureCard from '../../components/Cards/FeatureCard/FeatureCard'
 import {PriceCard} from '../../components/Cards/PriceCard/PriceCard'
 import {RegistrationForm} from '../../components/RegistrationForm/RegistrationForm'
+import {useMediaQuery} from "react-responsive";
 
 export default function Home() {
+  const isDesktop = useMediaQuery({minWidth: 1440})
+
   return (
     <div className={s.home}>
       <section id='home' className={s.hero}>
@@ -24,13 +28,13 @@ export default function Home() {
           </p>
         </div>
 
-        <img src={HeroImage} alt='iphone'/>
+        <img src={isDesktop ? HeroImageDesktop : HeroImageMobile} alt='iphone'/>
       </section>
 
       <section className={s.features}>
         <ul className={s.featureList}>
           {FEATURES.map((feature, idx) => (
-            <FeatureCard key={idx} feature={feature}/>
+            <FeatureCard key={idx} feature={feature} index={idx}/>
           ))}
         </ul>
       </section>

@@ -69,6 +69,10 @@
   align-items: center;
 }
 
+.hero img {
+  max-width: none;
+}
+
 .heroContent {
   display: flex;
   flex-direction: column;
@@ -83,13 +87,13 @@
 }
 
 .features {
-  margin-top: 50px;
+  margin-top: -75px;
 }
 
 .featureList {
   display: flex;
   flex-direction: column;
-  gap: 90px;
+  gap: 55px;
 }
 
 .subTitle {

@@ -1,7 +1,17 @@
 import {Feature, TCards} from '../types'
-import Phone1 from '../assets/images/desktop-phone-1.png'
-import Phone2 from '../assets/images/desktop-phone-2.png'
-import Phone3 from '../assets/images/desktop-phone-3.png'
+
+import PhoneDesktop2 from '../assets/images/Desktop/desktop-phone-2.png'
+import PhoneDesktop3 from '../assets/images/Desktop/desktop-phone-3.png'
+import PhoneDesktop4 from '../assets/images/Desktop/desktop-phone-4.png'
+import PhoneDesktop5 from '../assets/images/Desktop/desktop-phone-5.png'
+import PhoneDesktop6 from '../assets/images/Desktop/desktop-phone-6.png'
+import PhoneDesktop7 from '../assets/images/Desktop/desktop-phone-7.png'
+import PhoneMobile2 from '../assets/images/Mobile/phone2.png'
+import PhoneMobile3 from '../assets/images/Mobile/phone3.png'
+import PhoneMobile4 from '../assets/images/Mobile/phone4.png'
+import PhoneMobile5 from '../assets/images/Mobile/phone5.png'
+import PhoneMobile6 from '../assets/images/Mobile/phone6.png'
+import PhoneMobile7 from '../assets/images/Mobile/phone7.png'
 
 export const FEATURES: Feature[] = [
   {
@@ -17,7 +27,8 @@ export const FEATURES: Feature[] = [
         text: 'Цей підхід не лише економить ваш час, але й забезпечує першокласний результат, який задовольнить як клієнтів, так і стилістів. Отримуйте якісні перетворення з максимальним комфортом.',
       },
     ],
-    image: Phone1,
+    imageDesktop: PhoneDesktop2,
+    imageMobile: PhoneMobile2
   },
 
   {
@@ -33,7 +44,8 @@ export const FEATURES: Feature[] = [
         text: 'Цей підхід надає зручність як клієнтам, так і бізнесам, дозволяючи їм краще керувати своїм часом та забезпечувати найвищий рівень обслуговування.',
       },
     ],
-    image: Phone1,
+    imageDesktop: PhoneDesktop3,
+    imageMobile: PhoneMobile3
   },
   {
     title: 'Зворотний дзвінок',
@@ -48,7 +60,8 @@ export const FEATURES: Feature[] = [
         text: 'Наша послуга зворотного дзвінка не лише забезпечує повагу до клієнтів, але й допомагає вам будувати сильну репутацію як надійного та відповідального партнера.',
       },
     ],
-    image: Phone2,
+    imageDesktop: PhoneDesktop4,
+    imageMobile: PhoneMobile4
   },
   {
     title: 'Інформація про послуги закладу',
@@ -63,7 +76,8 @@ export const FEATURES: Feature[] = [
         text: 'Ми прагнемо створити навколишню атмосферу довіри і комфорту, щоб ви завжди з радістю поверталися до нас.',
       },
     ],
-    image: Phone3,
+    imageDesktop: PhoneDesktop5,
+    imageMobile: PhoneMobile5
   },
   {
     title: 'Нагадування про попередній запис',
@@ -75,7 +89,8 @@ export const FEATURES: Feature[] = [
         text: 'Завдяки нашій технології ви можете спокійно планувати свій час, знаючи, що ми надсилатимемо вам нагадування про всі ваші попередні записи.',
       },
     ],
-    image: Phone3,
+    imageDesktop: PhoneDesktop6,
+    imageMobile: PhoneMobile6
   },
   {
     title: 'Аналітика відвідування закладу',
@@ -87,7 +102,8 @@ export const FEATURES: Feature[] = [
         text: 'Ми забезпечуємо детальну інформацію щодо відвідуваності, виручки та інших ключових метрик, які допомагають приймати обґрунтовані рішення для підвищення ефективності закладу.',
       },
     ],
-    image: Phone3,
+    imageDesktop: PhoneDesktop7,
+    imageMobile: PhoneMobile7
   },
 ]
 

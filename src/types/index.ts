@@ -1,7 +1,8 @@
 export type Feature = {
   title: string
   description: Question[]
-  image: string
+  imageDesktop: string
+  imageMobile: string
 }
 
 export type Question = {

@@ -3,20 +3,20 @@ import s from './FeatureCard.module.css'
 import CheckCircle from '../../../assets/icons/check-circle.svg'
 import {useMediaQuery} from 'react-responsive'
 
-const FeatureCard = ({feature}: { feature: Feature }) => {
+const FeatureCard = ({feature, index}: { feature: Feature, index: number }) => {
   const isDesktop = useMediaQuery({minWidth: 1440})
 
   return (
     <li
       id={feature.title}
-      style={feature.title === 'Change' ? {flexDirection: 'row-reverse'} : {}}
+      style={index % 2 ? {flexDirection: 'row-reverse'} : {}}
       className={s.featureCard}
     >
       {isDesktop && (
         <img
-          style={feature.title === 'Change' ? {marginLeft: 0, marginRight: '-137px'} : {}}
+          style={index % 2 ? {marginLeft: 0, marginRight: '-137px'} : {}}
           className={s.featureImage}
-          src={feature.image}
+          src={feature.imageDesktop}
           alt={feature.title}
         />
       )}
@@ -25,7 +25,7 @@ const FeatureCard = ({feature}: { feature: Feature }) => {
 
         <h3 className={s.featureTitle}>{feature.title}</h3>
 
-        {!isDesktop && <img className={s.featureImage} src={feature.image} alt={feature.title}/>}
+        {!isDesktop && <img className={s.featureImage} src={feature.imageMobile} alt={feature.title}/>}
 
         <ul className={s.featureDescriptionList}>
           {feature.description.map((desc, idx) => (
