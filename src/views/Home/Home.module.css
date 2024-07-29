@@ -70,6 +70,7 @@
 }
 
 .hero img {
+  width: 100vw;
   max-width: none;
 }
 
@@ -84,10 +85,6 @@
   max-width: none;
   margin-top: 43px;
   user-select: none;
-}
-
-.features {
-  margin-top: -75px;
 }
 
 .featureList {
@@ -169,6 +166,10 @@
     line-height: 45px;
   }
 
+  .hero img {
+    max-width: 596px;
+  }
+
   .priceCardBlock {
     margin-top: 30px;
   }
@@ -238,6 +239,10 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+  }
+
+  .hero img {
+    max-width: none;
   }
 
   .heroContent {

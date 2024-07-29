@@ -1,8 +1,8 @@
-import { Route, Routes } from "react-router-dom";
-import Container from "./components/Container/Container";
-import Home from "./views/Home/Home";
-import Layout from "./views/Layout";
-import PrivacyPolicy from "./views/PrivacyPolicy/PrivacyPolicy";
+import { Route, Routes } from 'react-router-dom'
+import Container from './components/Container/Container'
+import Home from './views/Home/Home'
+import Layout from './views/Layout'
+import PrivacyPolicy from './views/PrivacyPolicy/PrivacyPolicy'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         </Route>
       </Routes>
     </Container>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,4 +1,4 @@
-import {Feature, TCards} from '../types'
+import { Feature, TCards } from '../types'
 
 import PhoneDesktop2 from '../assets/images/Desktop/desktop-phone-2.png'
 import PhoneDesktop3 from '../assets/images/Desktop/desktop-phone-3.png'
@@ -28,7 +28,7 @@ export const FEATURES: Feature[] = [
       },
     ],
     imageDesktop: PhoneDesktop2,
-    imageMobile: PhoneMobile2
+    imageMobile: PhoneMobile2,
   },
 
   {
@@ -45,7 +45,7 @@ export const FEATURES: Feature[] = [
       },
     ],
     imageDesktop: PhoneDesktop3,
-    imageMobile: PhoneMobile3
+    imageMobile: PhoneMobile3,
   },
   {
     title: 'Зворотний дзвінок',
@@ -61,7 +61,7 @@ export const FEATURES: Feature[] = [
       },
     ],
     imageDesktop: PhoneDesktop4,
-    imageMobile: PhoneMobile4
+    imageMobile: PhoneMobile4,
   },
   {
     title: 'Інформація про послуги закладу',
@@ -77,7 +77,7 @@ export const FEATURES: Feature[] = [
       },
     ],
     imageDesktop: PhoneDesktop5,
-    imageMobile: PhoneMobile5
+    imageMobile: PhoneMobile5,
   },
   {
     title: 'Нагадування про попередній запис',
@@ -90,7 +90,7 @@ export const FEATURES: Feature[] = [
       },
     ],
     imageDesktop: PhoneDesktop6,
-    imageMobile: PhoneMobile6
+    imageMobile: PhoneMobile6,
   },
   {
     title: 'Аналітика відвідування закладу',
@@ -103,7 +103,7 @@ export const FEATURES: Feature[] = [
       },
     ],
     imageDesktop: PhoneDesktop7,
-    imageMobile: PhoneMobile7
+    imageMobile: PhoneMobile7,
   },
 ]
 
@@ -112,6 +112,13 @@ export const CARDS: Array<TCards> = [
     title: 'Базовый',
     price: '1000 грн',
     description: 'Основные услуги',
-    features: ['Стильна зачіска за вашим фото з використанням AI', 'Бронь запису онлайн', 'Зворотний дзвінок', 'Інформація про послуги закладу', 'Нагадування про попередній запис', 'Аналітика відвідування закладу'],
+    features: [
+      'Стильна зачіска за вашим фото з використанням AI',
+      'Бронь запису онлайн',
+      'Зворотний дзвінок',
+      'Інформація про послуги закладу',
+      'Нагадування про попередній запис',
+      'Аналітика відвідування закладу',
+    ],
   },
-];
+]

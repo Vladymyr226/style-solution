@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: -70px;
 }
 
 .featureDescriptionItem {
@@ -76,7 +75,6 @@
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 0;
-
   }
 
   .featureDescriptionItem {

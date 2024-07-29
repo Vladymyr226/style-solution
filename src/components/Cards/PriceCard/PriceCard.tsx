@@ -14,7 +14,7 @@ export const PriceCard: FC<{ card: TCards }> = ({ card }) => {
       <ul className={s.priceCardFeatures}>
         {features.map((feature, index) => (
           <li key={index}>
-            <img src={CheckCircle} alt='check-circle' width={24} height={24} />
+            <img src={CheckCircle} alt="check-circle" width={24} height={24} />
             {feature}
           </li>
         ))}
