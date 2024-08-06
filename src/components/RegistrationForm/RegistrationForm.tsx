@@ -94,7 +94,7 @@ export const RegistrationForm = () => {
   }
 
   return (
-    <div id={'registrationForm'} className={s.registrationForm}>
+    <div className={s.registrationForm}>
       {error && <p className={s.error}>{error}</p>}
       {success && <p className={s.success}>Дані відправлені. Очікуйте, з вами зв'яжеться адміністратор.</p>}
       <form onSubmit={handleSubmit}>

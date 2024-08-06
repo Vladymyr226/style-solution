@@ -80,7 +80,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className={s.formBlock}>
+        <div id={'registrationForm'} className={s.formBlock}>
           <h1>Реєстрація нового закладу</h1>
           <RegistrationForm />
         </div>
