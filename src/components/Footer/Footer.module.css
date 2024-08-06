@@ -9,7 +9,7 @@
 .contacts {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;

@@ -1,22 +1,55 @@
 import s from './Home.module.css'
 import HeroImageDesktop from '../../assets/images/Desktop/desktop-phone-1.png'
 import HeroImageMobile from '../../assets/images/Mobile/phone1.png'
+import Phone1 from '../../assets/images/Mobile/phone1.png'
+import Phone2 from '../../assets/images/Mobile/phone2.png'
 import { CARDS, FEATURES } from '../../constants'
 import FeatureCard from '../../components/Cards/FeatureCard/FeatureCard'
 import { PriceCard } from '../../components/Cards/PriceCard/PriceCard'
 import { RegistrationForm } from '../../components/RegistrationForm/RegistrationForm'
 import { useMediaQuery } from 'react-responsive'
+import React from 'react'
+import { Features } from '../../components/Cards/PriceCard/Features'
+import { Button } from '../../components/Button/Button'
+import { HashLink as Link } from 'react-router-hash-link'
 
 export default function Home() {
   const isDesktop = useMediaQuery({ minWidth: 1440 })
+  //todo add videoId from Youtube
+  const videoId = ''
+  const videoSrc = `https://www.youtube.com/embed/${videoId}`
 
   return (
     <div className={s.home}>
+      <section id="sub_header" className={s.subTitle}>
+        <h1 style={{ textAlign: 'center' }}>Ваш стиль на новому рівні</h1>
+        <div className={s.subTitleContent}>
+          <div>
+            <Features features={CARDS[0].features} />
+          </div>
+          <div className={s.containerImg}>
+            <div className={s.containerWrapper}>
+              <img src={Phone1} alt="phone1" width={24} height={24} />
+            </div>
+            <div className={s.containerWrapper}>
+              <img src={Phone2} alt="phone2" width={24} height={24} />
+            </div>
+          </div>
+        </div>
+        <iframe
+          className={s.video}
+          src={videoSrc}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+        <Link to="/#registrationForm" smooth={true}>
+          <Button content={'Спробувати безкоштовно'} />
+        </Link>
+      </section>
       <section id="home" className={s.hero}>
         <div className={s.heroContent}>
-          <p className={s.title}>
-            Ми допомагаємо барбершопам, перукарням та салонам краси побудувати успішний бізнес!
-          </p>
+          <p className={s.title}>Ми допомагаємо барбершопам, перукарням та салонам краси побудувати успішний бізнес!</p>
 
           <p className={s.description}>
             Наша команда експертів готова надати повний медіа-маркетинг, розробку бренду та багато іншого.

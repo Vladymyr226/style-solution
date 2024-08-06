@@ -62,11 +62,58 @@
 }
 
 .hero {
-  margin-top: 76px;
+  margin-top: 50px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.subTitle {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px
+}
+
+.subTitleContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+}
+
+.containerImg {
+  display: flex; /* Используем Flexbox для размещения изображений рядом */
+  width: 445px;
+}
+
+.containerWrapper {
+  flex: 1; /* Каждое изображение занимает равное пространство */
+  width: fit-content;
+  height: 200px; /* Высота контейнера - это будет высота видимой части изображения */
+  overflow: hidden; /* Скрываем нижнюю часть изображений */
+  position: relative; /* Для контроля над абсолютным позиционированием */
+}
+
+.containerWrapper img {
+  width: 100%; /* Ширина изображения адаптивная */
+  height: auto; /* Высота изображения для сохранения пропорций */
+  /*transform: translateY(-50px); !* Сдвигаем изображение вверх на 50px для обрезки нижней части *!*/
+  max-width: none;
+
+}
+
+.video {
+  aspect-ratio: 16/9;
+  min-height: 200px;
 }
 
 .hero img {
@@ -91,17 +138,6 @@
   display: flex;
   flex-direction: column;
   gap: 55px;
-}
-
-.subTitle {
-  color: var(--blue);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 2.88px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 4px;
 }
 
 .stepsList {
@@ -166,6 +202,22 @@
     line-height: 45px;
   }
 
+  .subTitleContent {
+    flex-direction: row;
+  }
+
+  .containerImg {
+    width: 545px;
+  }
+
+  .containerWrapper {
+    height: 225px;
+  }
+
+  .video {
+    min-height: 500px;
+  }
+
   .hero img {
     max-width: 596px;
   }
@@ -218,6 +270,22 @@
     text-align: left;
     font-size: 54px;
     line-height: 54px;
+  }
+
+  .subTitleContent {
+    flex-direction: row;
+  }
+
+  .containerImg {
+    width: 545px;
+  }
+
+  .containerWrapper {
+    height: 225px;
+  }
+
+  .video {
+    min-height: 500px;
   }
 
   .priceCardBlock {

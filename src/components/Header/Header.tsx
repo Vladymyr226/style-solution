@@ -15,22 +15,22 @@ const Header = () => {
         </Link>
 
         <ul className={s.navigationList}>
-          <Link to="/#Стильна зачіска за вашим фото з використанням AI">
+          <Link to="/#Стильна зачіска за вашим фото з використанням AI" smooth={true}>
             <li className={s.navigationItem}>Стильна зачіска за вашим фото з використанням AI</li>
           </Link>
-          <Link to="/#Бронь запису онлайн">
+          <Link to="/#Бронь запису онлайн" smooth={true}>
             <li className={s.navigationItem}>Бронь запису онлайн</li>
           </Link>
-          <Link to="/#Зворотний дзвінок">
+          <Link to="/#Зворотний дзвінок" smooth={true}>
             <li className={s.navigationItem}>Зворотний дзвінок</li>
           </Link>
-          <Link to="/#Інформація про послуги закладу">
+          <Link to="/#Інформація про послуги закладу" smooth={true}>
             <li className={s.navigationItem}>Інформація про послуги закладу</li>
           </Link>
-          <Link to="/#Нагадування про попередній запис">
+          <Link to="/#Нагадування про попередній запис" smooth={true}>
             <li className={s.navigationItem}>Нагадування про попередній запис</li>
           </Link>
-          <Link to="/#Аналітика відвідування закладу">
+          <Link to="/#Аналітика відвідування закладу" smooth={true}>
             <li className={s.navigationItem}>Аналітика відвідування закладу</li>
           </Link>
         </ul>
