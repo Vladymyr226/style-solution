@@ -10,8 +10,9 @@ import { RegistrationForm } from '../../components/RegistrationForm/Registration
 import { useMediaQuery } from 'react-responsive'
 import React from 'react'
 import { Features } from '../../components/Cards/PriceCard/Features'
-import { Button } from '../../components/Button/Button'
+import Button from '@mui/material/Button'
 import { HashLink as Link } from 'react-router-hash-link'
+import { GalleryModal } from '../../components/Modals/Gallery'
 
 export default function Home() {
   const isDesktop = useMediaQuery({ minWidth: 1440 })
@@ -44,9 +45,12 @@ export default function Home() {
           allowFullScreen
         ></iframe>
         <Link to="/#registrationForm" smooth={true}>
-          <Button content={'Спробувати безкоштовно'} />
+          <Button variant="contained" color="success" size={'large'}>
+            Спробувати безкоштовно
+          </Button>
         </Link>
       </section>
+      <GalleryModal />
       <section id="home" className={s.hero}>
         <div className={s.heroContent}>
           <p className={s.title}>Ми допомагаємо барбершопам, перукарням та салонам краси побудувати успішний бізнес!</p>
