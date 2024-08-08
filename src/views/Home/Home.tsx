@@ -1,8 +1,7 @@
 import s from './Home.module.css'
 import HeroImageDesktop from '../../assets/images/Desktop/desktop-phone-1.png'
 import HeroImageMobile from '../../assets/images/Mobile/phone1.png'
-import Phone1 from '../../assets/images/Mobile/phone1.png'
-import Phone2 from '../../assets/images/Mobile/phone2.png'
+import photo from '../../assets/images/photo.jpg'
 import { CARDS, FEATURES } from '../../constants'
 import FeatureCard from '../../components/Cards/FeatureCard/FeatureCard'
 import { PriceCard } from '../../components/Cards/PriceCard/PriceCard'
@@ -12,7 +11,6 @@ import React from 'react'
 import { Features } from '../../components/Cards/PriceCard/Features'
 import Button from '@mui/material/Button'
 import { HashLink as Link } from 'react-router-hash-link'
-import { GalleryModal } from '../../components/Modals/Gallery'
 
 export default function Home() {
   const isDesktop = useMediaQuery({ minWidth: 1440 })
@@ -29,28 +27,23 @@ export default function Home() {
             <Features features={CARDS[0].features} />
           </div>
           <div className={s.containerImg}>
-            <div className={s.containerWrapper}>
-              <img src={Phone1} alt="phone1" width={24} height={24} />
-            </div>
-            <div className={s.containerWrapper}>
-              <img src={Phone2} alt="phone2" width={24} height={24} />
-            </div>
+            <img src={photo} alt="phone1" width={24} height={24} />
           </div>
         </div>
-        <iframe
-          className={s.video}
-          src={videoSrc}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        {/*<iframe*/}
+        {/*  className={s.video}*/}
+        {/*  src={videoSrc}*/}
+        {/*  title="YouTube video player"*/}
+        {/*  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
+        {/*  allowFullScreen*/}
+        {/*></iframe>*/}
         <Link to="/#registrationForm" smooth={true}>
-          <Button variant="contained" color="success" size={'large'}>
+          <Button variant="contained" size={'large'} style={{ padding: '10px 20px' }}>
             Спробувати безкоштовно
           </Button>
         </Link>
       </section>
-      <GalleryModal />
+      {/*<GalleryModal />*/}
       <section id="home" className={s.hero}>
         <div className={s.heroContent}>
           <p className={s.title}>Ми допомагаємо барбершопам, перукарням та салонам краси побудувати успішний бізнес!</p>

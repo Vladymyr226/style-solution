@@ -1,6 +1,7 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react'
 import validator from 'validator'
 import s from './RegistrationForm.module.css'
+import Button from '@mui/material/Button'
 
 function filterEmptyFields(data: any) {
   return Object.fromEntries(Object.entries(data).filter(([key, value]) => (value as string).trim() !== ''))
@@ -132,9 +133,9 @@ export const RegistrationForm = () => {
           <label>Вебсайт:</label>
           <input type="url" name="website" value={formData.website} onChange={handleChange} />
         </div>
-        <button type="submit" disabled={isSubmitting}>
+        <Button variant="contained" size={'medium'} type="submit" disabled={isSubmitting}>
           {isSubmitting ? 'Відправка...' : 'Зареєструватись'}
-        </button>
+        </Button>
       </form>
     </div>
   )
