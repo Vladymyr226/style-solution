@@ -2,12 +2,19 @@ import React, { ChangeEvent, FormEvent, useState } from 'react'
 import validator from 'validator'
 import s from './RegistrationForm.module.css'
 import Button from '@mui/material/Button'
+import { useNavigate } from 'react-router-dom'
 
 function filterEmptyFields(data: any) {
   return Object.fromEntries(Object.entries(data).filter(([key, value]) => (value as string).trim() !== ''))
 }
 
 export const RegistrationForm = () => {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate('/thank-you-page')
+  }
+
   const [formData, setFormData] = useState({
     name: '',
     address: '',
@@ -87,6 +94,8 @@ export const RegistrationForm = () => {
         description: '',
         opening_hours: '',
       })
+
+      handleClick()
     } catch (error) {
       setError((error as any).message)
     } finally {

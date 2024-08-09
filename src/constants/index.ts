@@ -110,7 +110,7 @@ export const FEATURES: Feature[] = [
 export const CARDS: Array<TCards> = [
   {
     title: 'Базовый',
-    price: '1000 грн/місяць',
+    price: '800 грн/місяць',
     description: 'Основные услуги',
     features: [
       'Стильна зачіска за вашим фото з використанням AI',
