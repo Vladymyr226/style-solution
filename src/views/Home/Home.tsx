@@ -21,7 +21,9 @@ export default function Home() {
   return (
     <div className={s.home}>
       <section id="sub_header" className={s.subTitle}>
-        <h1 style={{ textAlign: 'center' }}>QR-код для барбершопів, перукарень та салонів краси на Style Solution</h1>
+        <h1 style={{ textAlign: 'center' }}>
+          Онлайн запис для барбершопів, перукарень та салонів краси на Style Solution
+        </h1>
         <div className={s.subTitleContent}>
           <div>
             <Features features={CARDS[0].features} />
