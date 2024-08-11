@@ -80,7 +80,7 @@ export default function Home() {
       </section>
       <section>
         <div id={'registrationForm'} className={s.formBlock}>
-          <h1>Реєстрація нового закладу</h1>
+          <h1>Зареєструйте свій заклад та отримайте 7 днів у подарунок</h1>
           <RegistrationForm />
         </div>
       </section>
