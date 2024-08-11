@@ -23,7 +23,7 @@
 .footerContacts {
   display: flex;
   gap: 20px;
-  background-color: var(--grey);
+  background-color: whitesmoke;
 }
 
 .socialList {

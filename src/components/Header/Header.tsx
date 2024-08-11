@@ -2,6 +2,7 @@ import s from './Header.module.css'
 import Logo from '../../assets/icons/logo.png'
 import { useMediaQuery } from 'react-responsive'
 import { HashLink as Link } from 'react-router-hash-link'
+import { Button } from '@mui/material'
 
 const Header = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 })
@@ -33,6 +34,15 @@ const Header = () => {
           <Link to="/#Аналітика відвідування закладу" smooth={true}>
             <li className={s.navigationItem}>Аналітика відвідування закладу</li>
           </Link>
+          {!isMobile && (
+            <Link to="/about-us">
+              <li>
+                <Button variant="outlined" size="large" style={{ padding: '5px 10px', whiteSpace: 'nowrap' }}>
+                  Про нас
+                </Button>
+              </li>
+            </Link>
+          )}
         </ul>
       </nav>
     </div>

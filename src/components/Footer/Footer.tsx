@@ -3,6 +3,8 @@ import Logo from '../../assets/icons/logo.png'
 import Phone from '../../assets/icons/phone.svg'
 import Telegram from '../../assets/icons/telegram.svg'
 import s from './Footer.module.css'
+import { Button } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 })
@@ -19,7 +21,7 @@ const Footer = () => {
 
               <p className={s.contacts}>
                 <img src={Phone} width={17} height={16} alt="phone" />
-                <a href="tel:+380 50 561 86 62" rel="noopener noreferrer">
+                <a href="tel:+380 50 561 86 62" rel="noopener noreferrer" style={{ whiteSpace: 'nowrap' }}>
                   +380 50 561 86 62
                 </a>
               </p>
@@ -29,12 +31,26 @@ const Footer = () => {
                   J_Volodya
                 </a>
               </p>
-              <p className={s.contacts}>ФОП Свириденко Володимир Романович</p>
+            </div>
+            <div>
+              {isMobile && (
+                <>
+                  <Link to="/about-us" style={{ listStyle: 'none' }}>
+                    <li>
+                      <Button variant="outlined" size="large" style={{ padding: '5px 10px', whiteSpace: 'nowrap' }}>
+                        Про нас
+                      </Button>
+                    </li>
+                  </Link>
+                  <br />
+                  <p className={s.contacts}>ФОП Свириденко Володимир Романович</p>
+                </>
+              )}
             </div>
           </div>
           {!isMobile && (
             <p className={s.subTitle}>
-              <b>Style Solution</b> - сервіс, від котрого клієнти та бізнес отримують задоволення 🤤
+              <b>Style Solution</b> - сервіс, від якого клієнти та бізнес отримують задоволення 🤤
             </p>
           )}
         </div>
