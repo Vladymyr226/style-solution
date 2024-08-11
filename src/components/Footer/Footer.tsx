@@ -44,6 +44,7 @@ const Footer = () => {
                   </Link>
                   <br />
                   <p className={s.contacts}>ФОП Свириденко Володимир Романович</p>
+                  <br />
                 </>
               )}
             </div>

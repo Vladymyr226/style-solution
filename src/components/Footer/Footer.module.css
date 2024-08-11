@@ -4,6 +4,11 @@
   flex-direction: column;
   gap: 60px;
   padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .contacts {
@@ -24,6 +29,11 @@
   display: flex;
   gap: 20px;
   background-color: whitesmoke;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .socialList {
@@ -33,16 +43,19 @@
 
 .footerContentList {
   display: flex;
-  gap: 30px;
-  width: 100%;
+  gap: 20px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .footerContentItem {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  align-items: center;
 }
 
 .footerContentTitle {
@@ -64,6 +77,9 @@
   font-weight: 500;
   line-height: 30px;
   text-align: center;
+  max-width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .legal {
@@ -75,33 +91,17 @@
 
 @media screen and (min-width: 768px) {
   .footerContacts {
-    margin-left: 0;
     background-color: transparent;
     padding: 0;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .footer {
-    width: 100%;
-    flex-direction: column;
-    gap: 0;
-    padding-top: 20px;
   }
 
   .footerContentList {
-    flex-direction: row;
-    width: initial;
-    align-items: center;
-  }
-
-  .socialList {
-    gap: 20px;
+    gap: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .footer {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
