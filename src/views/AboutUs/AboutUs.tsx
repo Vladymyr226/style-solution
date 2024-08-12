@@ -2,7 +2,7 @@ import s from './AboutUs.module.css'
 
 const AboutUs = () => {
   return (
-    <div className={s.privatPolicy}>
+    <div id={'about-us'} className={s.privatPolicy}>
       <h2 className={s.subTitle}>Про нас</h2>
       <p className={s.text}>
         <span>Style Solution</span> – це ваш шлях у світ стилю. Ми спеціалізуємося на створенні інноваційних рішень для

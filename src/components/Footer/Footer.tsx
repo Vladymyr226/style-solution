@@ -4,7 +4,7 @@ import Phone from '../../assets/icons/phone.svg'
 import Telegram from '../../assets/icons/telegram.svg'
 import s from './Footer.module.css'
 import { Button } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 const Footer = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 })
@@ -35,7 +35,7 @@ const Footer = () => {
             <div>
               {isMobile && (
                 <>
-                  <Link to="/about-us" style={{ listStyle: 'none' }}>
+                  <Link to="/about-us/#about-us" style={{ listStyle: 'none' }} smooth={true}>
                     <li>
                       <Button variant="outlined" size="large" style={{ padding: '5px 10px', whiteSpace: 'nowrap' }}>
                         Про нас
