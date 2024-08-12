@@ -1,5 +1,5 @@
 .registrationForm {
-  width: 350px;
+  width: 100%;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ddd;
@@ -7,42 +7,26 @@
   background-color: #f9f9f9;
 }
 
-.registrationForm div {
-  margin-bottom: 15px;
-}
-
-.registrationForm label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.registrationForm input,
-.registrationForm textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.registrationForm .required {
-  color: red;
-}
-
-.registrationForm button {
-  width: 100%;
-}
-
-.registrationForm button:disabled {
-  background-color: #ccc;
+.registrationForm form {
+  text-align: center;
 }
 
 .error {
   color: red;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.success {
-  color: green;
-  text-align: center;
+
+@media screen and (min-width: 768px) {
+  .registrationForm {
+    width: 350px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .registrationForm {
+    width: 350px;
+  }
 }
