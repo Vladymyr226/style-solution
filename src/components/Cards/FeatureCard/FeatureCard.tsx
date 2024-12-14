@@ -7,7 +7,7 @@ const FeatureCard = ({ feature, index }: { feature: Feature; index: number }) =>
   const isDesktop = useMediaQuery({ minWidth: 1440 })
 
   return (
-    <li id={feature.title} style={index % 2 ? { flexDirection: 'row-reverse' } : {}} className={s.featureCard}>
+    <li id={feature.id} style={index % 2 ? { flexDirection: 'row-reverse' } : {}} className={s.featureCard}>
       {isDesktop && (
         <img
           style={index % 2 ? { marginLeft: 0, marginRight: '-137px' } : {}}

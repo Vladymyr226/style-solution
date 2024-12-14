@@ -7,16 +7,28 @@ import FeatureCard from '../../components/Cards/FeatureCard/FeatureCard'
 import { PriceCard } from '../../components/Cards/PriceCard/PriceCard'
 import { RegistrationForm } from '../../components/RegistrationForm/RegistrationForm'
 import { useMediaQuery } from 'react-responsive'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Features } from '../../components/Cards/PriceCard/Features'
 import Button from '@mui/material/Button'
 import { HashLink as Link } from 'react-router-hash-link'
+import { useLocation } from 'react-router-dom'
 
 export default function Home() {
   const isDesktop = useMediaQuery({ minWidth: 1440 })
   //todo add videoId from Youtube
   const videoId = ''
   const videoSrc = `https://www.youtube.com/embed/${videoId}`
+
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.replace('#', ''))
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }, [location])
 
   return (
     <div className={s.home}>

@@ -15,6 +15,7 @@ import PhoneMobile7 from '../assets/images/Mobile/phone7.png'
 
 export const FEATURES: Feature[] = [
   {
+    id: 'stylish-hairstyle-by-your-photo-using-ai',
     title: 'Стильна зачіска за вашим фото з використанням AI',
     description: [
       {
@@ -32,6 +33,7 @@ export const FEATURES: Feature[] = [
   },
 
   {
+    id: 'online-appointment-booking',
     title: 'Бронь запису онлайн',
     description: [
       {
@@ -48,6 +50,7 @@ export const FEATURES: Feature[] = [
     imageMobile: PhoneMobile3,
   },
   {
+    id: 'callback',
     title: 'Зворотний дзвінок',
     description: [
       {
@@ -64,6 +67,7 @@ export const FEATURES: Feature[] = [
     imageMobile: PhoneMobile4,
   },
   {
+    id: 'information-about-the-establishment-services',
     title: 'Інформація про послуги закладу',
     description: [
       {
@@ -80,6 +84,7 @@ export const FEATURES: Feature[] = [
     imageMobile: PhoneMobile5,
   },
   {
+    id: 'reminder-about-previous-appointment',
     title: 'Нагадування про попередній запис',
     description: [
       {
@@ -93,6 +98,7 @@ export const FEATURES: Feature[] = [
     imageMobile: PhoneMobile6,
   },
   {
+    id: 'establishment-visit-analytics',
     title: 'Аналітика відвідування закладу',
     description: [
       {

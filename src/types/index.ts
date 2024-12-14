@@ -1,4 +1,5 @@
 export type Feature = {
+  id: string
   title: string
   description: Question[]
   imageDesktop: string
